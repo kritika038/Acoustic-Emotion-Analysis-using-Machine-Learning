@@ -4,36 +4,35 @@
 
 ---
 
+## 🌐 Live Demo
+
+🚀 Try the deployed application here:
+👉 https://acoustic-emotion-analysis-using-machine-learning-3chfypjgt5mxt.streamlit.app/
+
+> No installation required — upload or record audio and get real-time emotion analysis.
+
+---
+
 ## 🌟 Overview
 
 This project is a **real-time Audio Behavior Analysis System** that detects human emotions from speech using **Machine Learning and acoustic signal processing**.
 
-Unlike traditional classifiers, this system goes beyond prediction — it provides **insights into speech patterns** like energy, pitch, and pauses to make results more **interpretable and meaningful**.
+Unlike basic classifiers, this system also provides **audio insights** such as energy, pitch, and silence — making predictions more **interpretable and meaningful**.
 
 ---
 
-## 🎯 What Makes This Project Unique?
-
-* 🧠 **Interpretable AI** – Not just predictions, but reasoning using audio signals
-* 🎤 **Real-time Voice Input** – Analyze emotions directly from microphone
-* 📊 **Acoustic Insights** – Understand *why* a prediction was made
-* ⚡ **No Retraining Required** – Pre-trained model included
-* 💡 **Clean UI with Streamlit** – Simple yet powerful interface
-
----
-
-## 🚀 Features
+## 🎯 Features
 
 * 🎯 Emotion Detection: Angry 😠 | Happy 😊 | Sad 😢 | Neutral 😐
-* 📈 Confidence Score Visualization
-* 📊 Audio Feature Analysis:
+* 📊 Confidence Score for predictions
+* 📈 Audio Insights:
 
   * Energy (loudness)
   * Pitch (frequency)
   * Silence Ratio (pauses)
   * Duration
 * 🧠 Smart Interpretation of results
-* 🎤 Live microphone input
+* 🎤 Real-time microphone input
 * 📂 WAV file upload
 * 📥 Downloadable JSON report
 
@@ -41,11 +40,12 @@ Unlike traditional classifiers, this system goes beyond prediction — it provid
 
 ## 🧠 Tech Stack
 
-* **Python**
-* **Streamlit**
-* **Scikit-learn**
-* **Librosa (Audio Processing)**
-* **NumPy**
+* Python
+* Streamlit
+* Scikit-learn
+* Librosa
+* NumPy
+* XGBoost
 
 ---
 
@@ -53,16 +53,16 @@ Unlike traditional classifiers, this system goes beyond prediction — it provid
 
 This project uses the **RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)** dataset.
 
-* 🎭 Emotions:
+* Emotions:
 
   * Angry 😠
   * Happy 😊
   * Sad 😢
   * Neutral 😐
 
-* 👥 24 professional actors
+* 24 professional actors
 
-* 🎧 High-quality WAV recordings
+* High-quality WAV audio
 
 🔗 Dataset Link:
 https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
@@ -71,16 +71,16 @@ https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
 
 ### ⚠️ Note
 
-* The dataset is **not included** in this repository due to size limitations.
-* The model is already trained and saved.
+* Dataset is not included due to size constraints
+* Model is already trained and saved
 
-👉 **You can run the project directly without retraining.**
+👉 **No retraining required to run the project**
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/kritika038/Acoustic-Emotion-Analysis-using-Machine-Learning.git
@@ -89,7 +89,7 @@ cd Acoustic-Emotion-Analysis-using-Machine-Learning
 
 ---
 
-### 2️⃣ Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3️⃣ Run the application
+### 3. Run the application
 
 ```bash
 streamlit run streamlit_app.py
@@ -111,55 +111,43 @@ streamlit run streamlit_app.py
 Audio Input → Feature Extraction → Scaling → ML Model → Emotion Prediction → Insights
 ```
 
-### 🔍 Feature Extraction:
+### Feature Extraction:
 
-* MFCC (captures speech characteristics)
-* Energy (loudness level)
-* Pitch (frequency variation)
-* Zero Crossing Rate (signal change rate)
+* MFCC (speech characteristics)
+* Energy
+* Pitch
+* Zero Crossing Rate
 
-### 🤖 Model:
+### Model:
 
 * XGBoost Classifier
-* Optimized for small structured audio datasets
-
----
-
-## 📊 Example Output
-
-* 🎯 Emotion: **Angry 😠**
-* 📈 Confidence: **0.95**
-* 📊 Energy: High
-* 🎵 Pitch: Elevated
-* 🔇 Silence: Moderate
-
-👉 Interpretation:
-**Strong vocal intensity indicates possible anger**
+* Optimized for structured audio features
 
 ---
 
 ## 📸 Screenshots
 
-📌 *Add screenshots here after deployment*
+### 🖥️ User Interface
+
+![UI](assets/ui.png)
+
+### 🎯 Emotion Prediction
+
+![Prediction](assets/prediction.png)
+
+### 📊 Audio Insights
+
+![Insights](assets/insights.png)
 
 ---
 
 ## 💡 Key Highlights
 
-* ✅ End-to-end ML pipeline
-* ✅ Real-time inference
-* ✅ Feature-driven interpretation
-* ✅ Lightweight and deployable
-* ✅ Clean and user-friendly UI
-
----
-
-## 🔮 Future Improvements
-
-* 🎙️ Continuous real-time emotion tracking
-* 📊 Advanced visualizations (waveforms, spectrograms)
-* 🤖 Deep Learning model integration (CNN/RNN)
-* 🌐 API deployment for external integration
+* End-to-end ML pipeline
+* Real-time audio processing
+* Interpretable predictions using acoustic features
+* Lightweight and deployable system
+* Clean and user-friendly interface
 
 ---
 
@@ -174,8 +162,7 @@ Audio Input → Feature Extraction → Scaling → ML Model → Emotion Predicti
 If you found this project useful:
 
 👉 Give it a ⭐ on GitHub
-👉 Share it with others
 
 ---
 
-> 💬 “Machines can now understand not just words, but emotions behind them.”
+> 💬 “Understanding emotions through voice brings machines closer to human intelligence.”
