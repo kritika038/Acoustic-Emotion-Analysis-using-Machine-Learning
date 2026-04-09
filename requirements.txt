@@ -1,5 +1,6 @@
-numpy
-librosa
-scikit-learn
 streamlit
+numpy
+scikit-learn
+librosa
 joblib
+xgboost
